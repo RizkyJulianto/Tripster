@@ -86,6 +86,12 @@ body {
     margin-top: 14%;
 }
 
+.home .home-text h3 {
+    color: var(--primry-color);
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 2rem;
+}
+
 .home .home-text h1 {
     font-size: 3rem;
     color: var(--text-color-white);
