@@ -23,6 +23,10 @@ body {
     color: var(--text-color);
 }
 
+.header {
+    width: 100vw;
+}
+
 .header nav{
     position: fixed;
     z-index: 1000;
@@ -69,15 +73,13 @@ body {
 }
 
 .home {
-    background: url(../images/bg-1.jpg);
-    height: 100vh;
+    background: black;
     width: 100%;
     background-size: cover;
     background-position: center;
     animation: slide 15s infinite;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     position: relative;
     padding: 10px 10%;
 }
@@ -147,26 +149,10 @@ body {
 .home .home-box-content .home-contain .home-row h6 {
     text-align: center;
     color: var(--text-color-white);
+    font-size: 0.7rem;
 }
 
-@keyframes slide {
-    0% {
-        background-image: url(../images/bg-2.jpg);
-    }
-    25% {
-        background-image: url(../images/bg-3.jpg);
-        background-position: top;
-    }
-    50% {
-        background-image: url(../images/bg-4.jpg);
-    }
-    75% {
-        background-image: url(../images/bg-5.jpg);
-        background-position: center;
-    }
-    100% {
-        background-image: url(../images/bg-1.jpg);
-    }
-}
 
+
+/* Responsive */
 
