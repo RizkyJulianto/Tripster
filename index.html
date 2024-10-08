@@ -21,7 +21,10 @@
         <div class="logo">
             <a href="">Tripster</a>
         </div>
-        <div class="navigation-list">
+        <div class="navigation-list" id="navigation-list">
+            <div class="close-menu">
+                <i class="ph ph-x" onclick="closeMenu()"></i>
+            </div>
             <ul>
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#destination">Destinasi</a></li>
@@ -31,9 +34,9 @@
                 <li><a href="#contact">Kontak</a></li>
             </ul>
 
-            <div class="hamburger-menu">
-                <i class="ph ph-list"></i>
-            </div>
+        </div>
+        <div class="hamburger-menu">
+            <i class="ph ph-list" onclick="showMenu()"></i>
         </div>
 
        </nav>
@@ -48,7 +51,7 @@
             <div class="home-text">
                 <h3>Tempat Terbaik Untuk Menjelajah Dunia</h3>
                 <h1>Ayo berkeliling <br> dunia bersama kami</h1>
-                <p>merencanakan perjalanan? kami akan mengatur perjalanan Anda dengan tempat terbaik <br> dalam bugdet terbaik</p>
+                <p>merencanakan perjalanan? kami akan mengatur perjalanan Anda dengan tempat terbaik dalam bugdet terbaik</p>
             </div>
             <div class="home-btn">
                 <a href="" class="btn-seemore">Lihat Lainnya</a>
@@ -78,12 +81,6 @@
                         <img src="images/excursion-tour.jpg" alt="">
                     </div>
                     <h6>Excursion tours</h6>
-                </div>
-                <div class="home-row">
-                    <div class="home-backrgound-img">
-                        <img src="images/spa-tour.jpg" alt="">
-                    </div>
-                    <h6>Spa tours</h6>
                 </div>
             </div>
         </div>
