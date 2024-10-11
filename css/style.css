@@ -37,7 +37,8 @@ body {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 30px 10%;
+    padding: 20px 10%;
+    transition: 0.5s;
 }
 
 .header .logo a {
@@ -228,10 +229,10 @@ body {
 
     .header .navigation-list {
         position: absolute;
-        background-color: var(--primry-color);
+        background-color: var(--text-color);
         width: 200px;
         right: -210px;
-        top: 90%;
+        top: 150%;
         border-top-left-radius: 30%;
         border-bottom-left-radius: 30%;
         transition: 0.5s;
