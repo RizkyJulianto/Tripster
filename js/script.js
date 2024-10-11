@@ -1,9 +1,20 @@
 // Show Navigation Bar in Mobile
-const navBar = document.getElementById("navigation-list");
+const navBarList = document.getElementById("navigation-list");
 function showMenu() {
-    navBar.style.right = '0';
+    navBarList.style.right = '0';
 }
 
 function closeMenu() {
-    navBar.style.right = '-210px';
+    navBarList.style.right = '-210px';
 }
+
+// Add Background at navbar when window scroll 
+window.addEventListener('scroll' ,function() {
+    const ScrollY = window.pageYOffset;
+    const navBar = document.getElementById('navBar');
+    if(ScrollY > 5) {
+        navBar.style.backdropFilter('blur') = '5px';
+    } else {
+        navBar.style.backdropFilter('blur') = '0';
+    }
+})
