@@ -177,21 +177,22 @@ body {
 }
 
 /* Destination */
-.destination {
+.destination,
+.about {
     padding: 5% 10%;
     position: relative;
     width: 100%;    
 }
 
-.destination .destination-box-content .destination-sub-title h3 {
+.destination .destination-box-content .destination-sub-title h3,
+.about .about-box-content .about-sub-title h3 {
     color: var(--primry-color);
     font-family: 'Great Vibes', sans-serif;
     font-size: 2rem;
 }
 
-.destination .destination-box-content .destination-title h2 {
+.destination .destination-box-content .destination-title h2{
     font-size: 2rem;
-    color: var(--text-color);
 }
 
 .destination .destination-box-content .destination-card-row {
@@ -220,6 +221,78 @@ body {
     margin-top: 8px;
 }
 
+
+/* About  */
+.about .about-box-content {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.about .about-box-content .about-content-left-col {
+    flex-basis: 32%;
+}
+
+.about .about-box-content .about-content-left-col .about-title h2 {
+    font-size: 2rem;
+}
+
+.about .about-box-content .about-content-left-col .about-btn-readmore a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--primry-color);
+    color: var(--text-color-white);
+    padding: 8px 15px;
+    border-radius: 5pc;
+    transition: 0.3s;
+}
+
+.about .about-box-content .about-content-left-col .about-btn-readmore a:hover {
+    background-color: transparent;
+    border: 1px solid var(--primry-color);
+    color: var(--text-color);
+}
+
+
+
+.about .about-box-content .about-content-img {
+    flex-basis: 30%;
+    /* background-color: red; */
+}
+
+
+.about .about-box-content .about-content-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.about .about-box-content .about-content-advantage {
+    flex-basis: 30%;
+}
+
+.about .about-box-content .about-content-advantage .about-advantage-list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.about .about-box-content .about-content-advantage .about-advantage-list:nth-child(2),
+.about .about-box-content .about-content-advantage .about-advantage-list:nth-child(3){
+    margin-top: 15px;
+}
+
+.about .about-box-content .about-advantage-list .about-advantage-list-icon i {
+    font-size: 2rem;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 10px;
+    color: var(--primry-color);
+}
+
+
+.about .about-box-content .about-advantage-list .about-advantage-list-text p {
+    font-size: 0.9rem;
+}
 
 
 
@@ -270,6 +343,9 @@ body {
         flex-wrap: wrap;
     }
 
+    .about .about-box-content {
+        flex-direction: column;
+    }
   
    
 }
