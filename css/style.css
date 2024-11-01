@@ -520,4 +520,20 @@ body {
         width: 150px;
         height: 200px;
     }
+
+    .package {
+        margin-top: 15%;
+    }
+
+    .package .package-box-content .package-title h2 {
+        font-size: 1.4rem;
+    }
+
+    .package .package-box-content .package-content-row {
+        gap: 15px;
+    }
+
+    .package .package-box-content .package-content-row .package-content-col:nth-child(odd) {
+        margin-top: 0;
+    }
 }
