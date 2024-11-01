@@ -7,13 +7,13 @@ Tripster is a travel-themed website project that I developed to practice and dev
 ## Lessons
 From this Tripster project, I learned:
 
-<ul>
+<ol>
 <li><b>HTML and Content Structuring:</b> Create a semantic and easy to understand web page structure. </li><br>
-<b>CSS and Responsive Design:</b> Apply CSS techniques to design pages that are attractive and responsive across devices.<br>
-<b>JavaScript for User Interaction:</b> Adds basic functionality to pages, such as animations and content display controls.<br>
-<b>Use of Media Queries:</b> Set the appearance of elements based on screen size.<br>
-<b>GitHub Best Practices:</b> Manage projects on GitHub for version control and collaboration.
-</ul>
+<li><b>CSS and Responsive Design:</b> Apply CSS techniques to design pages that are attractive and responsive across devices.</li><br>
+<li><b>JavaScript for User Interaction:</b> Adds basic functionality to pages, such as animations and content display controls.</li><br>
+<li><b>Use of Media Queries:</b> Set the appearance of elements based on screen size.</li><br>
+<li><b>GitHub Best Practices:</b> Manage projects on GitHub for version control and collaboration.</li>
+</ol>
 
 
 
