@@ -3,6 +3,7 @@ Tripster is a travel-themed website project that I developed to practice and dev
 
 
 
+
 ## Lessons
 From this Tripster project, I learned:
 
