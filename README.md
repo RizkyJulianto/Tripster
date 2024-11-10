@@ -30,7 +30,7 @@ Make sure Git is installed: Make sure your device has Git installed. You can che
 
 Clone Repository: Run the following command in the terminal:
 ```bash
- git clone https://github.com/username/Tripster.git
+ git clone https://github.com/RizkyJulianto/Tripster.git
 ```
 
 Open the Project Folder: Enter the Tripster directory with the command:
