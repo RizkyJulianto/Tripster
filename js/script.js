@@ -18,3 +18,6 @@ window.addEventListener('scroll' ,function() {
         navBar.style.backgroundColor = 'transparent';
     }
 })
+
+
+

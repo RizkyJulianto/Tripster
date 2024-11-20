@@ -1,342 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
     <!-- Icon css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Tripster</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-       <nav id="navBar">
+      <nav id="navBar">
         <div class="logo">
-            <a href="">Tripster</a>
+          <a href="">Tripster</a>
         </div>
         <div class="navigation-list" id="navigation-list">
-            <div class="close-menu">
-                <i class="ph ph-x" onclick="closeMenu()"></i>
-            </div>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#destination">Destinasi</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#package">Paket</a></li>
-                <li><a href="#testimoni">Testimoni</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-
+          <div class="close-menu">
+            <i class="ph ph-x" onclick="closeMenu()"></i>
+          </div>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#destination">Destinasi</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#package">Paket</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
         </div>
         <div class="hamburger-menu">
-            <i class="ph ph-list" onclick="showMenu()"></i>
+          <i class="ph ph-list" onclick="showMenu()"></i>
         </div>
-
-       </nav>
-
+      </nav>
     </header>
     <!-- Header End -->
 
-
     <!-- Home -->
-     <section class="home" id="home">
-        <div class="home-box-content">
-            <div class="home-text">
-                <h3>Tempat Terbaik Untuk Menjelajah Dunia</h3>
-                <h1>Ayo berkeliling <br> dunia bersama kami</h1>
-                <p>merencanakan perjalanan? kami akan mengatur perjalanan Anda dengan tempat terbaik dalam bugdet terbaik</p>
-            </div>
-            <div class="home-btn">
-                <a href="" class="btn-seemore">Lihat Lainnya</a>
-                <a href="" class="btn-chose-tour">Pilih Tour</a>
-            </div>
-            <div class="home-contain">
-                <div class="home-row">
-                    <div class="home-backrgound-img">
-                        <img src="images/ski-tour.jpg" alt="">
-                    </div>
-                    <h6>Ski tours</h6>
-                </div>
-                <div class="home-row">
-                    <div class="home-backrgound-img">
-                        <img src="images/wedding-tour.jpg" alt="">
-                    </div>
-                    <h6>Wedding tours</h6>
-                </div>
-                <div class="home-row">
-                    <div class="home-backrgound-img">
-                        <img src="images/shop-tour.jpg" alt="">
-                    </div>
-                    <h6>Shop tours</h6>
-                </div>
-                <div class="home-row">
-                    <div class="home-backrgound-img">
-                        <img src="images/excursion-tour.jpg" alt="">
-                    </div>
-                    <h6>Excursion tours</h6>
-                </div>
-            </div>
+    <section class="home" id="home">
+      <div class="home-box-content">
+        <div class="home-text">
+          <h3>Tempat Terbaik Untuk Menjelajah Dunia</h3>
+          <h1>
+            Ayo berkeliling <br />
+            dunia bersama kami
+          </h1>
+          <p>merencanakan perjalanan? kami akan mengatur perjalanan Anda dengan tempat terbaik dalam bugdet terbaik</p>
         </div>
-     </section>
+        <div class="home-btn">
+          <a href="" class="btn-seemore">Lihat Lainnya</a>
+          <a href="" class="btn-chose-tour">Pilih Tour</a>
+        </div>
+        <div class="home-contain">
+          <div class="home-row">
+            <div class="home-backrgound-img">
+              <img src="images/ski-tour.jpg" alt="" />
+            </div>
+            <h6>Ski tours</h6>
+          </div>
+          <div class="home-row">
+            <div class="home-backrgound-img">
+              <img src="images/wedding-tour.jpg" alt="" />
+            </div>
+            <h6>Wedding tours</h6>
+          </div>
+          <div class="home-row">
+            <div class="home-backrgound-img">
+              <img src="images/shop-tour.jpg" alt="" />
+            </div>
+            <h6>Shop tours</h6>
+          </div>
+          <div class="home-row">
+            <div class="home-backrgound-img">
+              <img src="images/excursion-tour.jpg" alt="" />
+            </div>
+            <h6>Excursion tours</h6>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Home End -->
 
     <!-- Destination Popular -->
-     <section class="destination" id="destination">
-        <div class="destination-box-content">
-            <div class="destination-sub-title">
-                <h3>Destinasi</h3>
-            </div>
-            <div class="destination-title">
-                <h2>Destinasi Populer</h2>
-            </div>
-            <div class="destination-card-row">
-                <div class="destination-card-content">
-                    <div class="destination-card-img">
-                        <img src="images/destination/japan.jpg" alt="">
-                    </div>
-                    <div class="destination-card-title">
-                        <h3>Japan</h3>
-                    </div>
-                </div>
-                <div class="destination-card-content">
-                    <div class="destination-card-img">
-                        <img src="images/destination/thailand.jpg" alt="">
-                    </div>
-                    <div class="destination-card-title">
-                        <h3>Thailand</h3>
-                    </div>
-                </div>
-                <div class="destination-card-content">
-                    <div class="destination-card-img">
-                        <img src="images/destination/south-korea.jpg" alt="">
-                    </div>
-                    <div class="destination-card-title">
-                        <h3>Korea Selatan</h3>
-                    </div>
-                </div>
-                <div class="destination-card-content">
-                    <div class="destination-card-img">
-                        <img src="images/destination/france.jpg" alt="">
-                    </div>
-                    <div class="destination-card-title">
-                        <h3>Prancis</h3>
-                    </div>
-                </div>
-                <div class="destination-card-content">
-                    <div class="destination-card-img">
-                        <img src="images/destination/indonesia.jpg" alt="">
-                    </div>
-                    <div class="destination-card-title">
-                        <h3>Indonesia</h3>
-                    </div>
-                </div>
-                <div class="destination-card-content">
-                    <div class="destination-card-img">
-                        <img src="images/destination/swiss.jpg" alt="">
-                    </div>
-                    <div class="destination-card-title">
-                        <h3>Swiss</h3>
-                    </div>
-                </div>
-                <div class="destination-card-content">
-                    <div class="destination-card-img">
-                        <img src="images/destination/italia.jpg" alt="">
-                    </div>
-                    <div class="destination-card-title">
-                        <h3>Italia</h3>
-                    </div>
-                </div>
-                <div class="destination-card-content">
-                    <div class="destination-card-img">
-                        <img src="images/destination/spain.jpg" alt="">
-                    </div>
-                    <div class="destination-card-title">
-                        <h3>Spanyol</h3>
-                    </div>
-                </div>
-                <div class="destination-card-content">
-                    <div class="destination-card-img">
-                        <img src="images/destination/china.jpg" alt="">
-                    </div>
-                    <div class="destination-card-title">
-                        <h3>China</h3>
-                    </div>
-                </div>
-            </div>
+    <section class="destination" id="destination">
+      <div class="destination-box-content">
+        <div class="destination-sub-title">
+          <h3>Destinasi</h3>
         </div>
-     </section>
+        <div class="destination-title">
+          <h2>Destinasi Populer</h2>
+        </div>
+        <div class="destination-card-row">
+          <div class="destination-card-content">
+            <div class="destination-card-img">
+              <img src="images/destination/japan.jpg" alt="" />
+            </div>
+            <div class="destination-card-title">
+              <h3>Japan</h3>
+            </div>
+          </div>
+          <div class="destination-card-content">
+            <div class="destination-card-img">
+              <img src="images/destination/thailand.jpg" alt="" />
+            </div>
+            <div class="destination-card-title">
+              <h3>Thailand</h3>
+            </div>
+          </div>
+          <div class="destination-card-content">
+            <div class="destination-card-img">
+              <img src="images/destination/south-korea.jpg" alt="" />
+            </div>
+            <div class="destination-card-title">
+              <h3>Korea Selatan</h3>
+            </div>
+          </div>
+          <div class="destination-card-content">
+            <div class="destination-card-img">
+              <img src="images/destination/france.jpg" alt="" />
+            </div>
+            <div class="destination-card-title">
+              <h3>Prancis</h3>
+            </div>
+          </div>
+          <div class="destination-card-content">
+            <div class="destination-card-img">
+              <img src="images/destination/indonesia.jpg" alt="" />
+            </div>
+            <div class="destination-card-title">
+              <h3>Indonesia</h3>
+            </div>
+          </div>
+          <div class="destination-card-content">
+            <div class="destination-card-img">
+              <img src="images/destination/swiss.jpg" alt="" />
+            </div>
+            <div class="destination-card-title">
+              <h3>Swiss</h3>
+            </div>
+          </div>
+          <div class="destination-card-content">
+            <div class="destination-card-img">
+              <img src="images/destination/italia.jpg" alt="" />
+            </div>
+            <div class="destination-card-title">
+              <h3>Italia</h3>
+            </div>
+          </div>
+          <div class="destination-card-content">
+            <div class="destination-card-img">
+              <img src="images/destination/spain.jpg" alt="" />
+            </div>
+            <div class="destination-card-title">
+              <h3>Spanyol</h3>
+            </div>
+          </div>
+          <div class="destination-card-content">
+            <div class="destination-card-img">
+              <img src="images/destination/china.jpg" alt="" />
+            </div>
+            <div class="destination-card-title">
+              <h3>China</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Destination Popular End -->
 
     <!-- About Section -->
-     <section class="about" id="about">
-        <div class="about-box-content">
-            <div class="about-content-left-col">
-                <div class="about-sub-title">
-                    <h3>Tentang</h3>
-                </div>
-                <div class="about-title">
-                    <h2>Bebaskan Jiwa <br> Petualangmu!</h2>
-                </div>
-                <div class="about-title-description">
-                    <p>Dengan Tripster, kamu akan menemukan destinasi-destinasi unik, pengalaman yang tak terduga, dan kenangan yang akan selalu terkenang.</p>
-                </div>
-                <div class="about-btn-readmore">
-                    <a href="">Lihat Selengkapnya</a>
-                </div>
-            </div>
-            <div class="about-content-img">
-                <img src="images/person-hiking.png" alt="">
-            </div>
-            <div class="about-content-advantage">
-                <div class="about-advantage-list">
-                    <div class="about-advantage-list-icon">
-                        <i class="ph ph-map-pin-line"></i>
-                    </div>
-                    <div class="about-advantage-list-text">
-                        <div class="about-advantage-list-title">
-                            <h3>Pemandu Wisata</h3>
-                        </div>
-                        <div class="about-advantage-list-description">
-                            <p>Nikmati perjalanan yang lancar dengan bantuan pemandu wisata</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-advantage-list">
-                    <div class="about-advantage-list-icon">
-                        <i class="ph ph-calendar-dots"></i>
-                    </div>
-                    <div class="about-advantage-list-text">
-                        <div class="about-advantage-list-title">
-                            <h3>Pemesanan Mudah</h3>
-                        </div>
-                        <div class="about-advantage-list-description">
-                            <p>Pesan liburanmu kapan saja dan di mana saja melalui aplikasi atau website kami.</p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="about-advantage-list">
-                    <div class="about-advantage-list-icon">
-                        <i class="ph ph-shield-check"></i>
-                    </div>
-                    <div class="about-advantage-list-text">
-                        <div class="about-advantage-list-title">
-                            <h3>Asuransi Perjalanan</h3>
-                        </div>
-                        <div class="about-advantage-list-description">
-                            <p>Berpetualang dengan tenang. Kami memberikan perlindungan asuransi perjalanan.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="about" id="about">
+      <div class="about-box-content">
+        <div class="about-content-left-col">
+          <div class="about-sub-title">
+            <h3>Tentang</h3>
+          </div>
+          <div class="about-title">
+            <h2>
+              Bebaskan Jiwa <br />
+              Petualangmu!
+            </h2>
+          </div>
+          <div class="about-title-description">
+            <p>Dengan Tripster, kamu akan menemukan destinasi-destinasi unik, pengalaman yang tak terduga, dan kenangan yang akan selalu terkenang.</p>
+          </div>
+          <div class="about-btn-readmore">
+            <a href="">Lihat Selengkapnya</a>
+          </div>
         </div>
-     </section>
+        <div class="about-content-img">
+          <img src="images/person-hiking.png" alt="" />
+        </div>
+        <div class="about-content-advantage">
+          <div class="about-advantage-list">
+            <div class="about-advantage-list-icon">
+              <i class="ph ph-map-pin-line"></i>
+            </div>
+            <div class="about-advantage-list-text">
+              <div class="about-advantage-list-title">
+                <h3>Pemandu Wisata</h3>
+              </div>
+              <div class="about-advantage-list-description">
+                <p>Nikmati perjalanan yang lancar dengan bantuan pemandu wisata</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-advantage-list">
+            <div class="about-advantage-list-icon">
+              <i class="ph ph-calendar-dots"></i>
+            </div>
+            <div class="about-advantage-list-text">
+              <div class="about-advantage-list-title">
+                <h3>Pemesanan Mudah</h3>
+              </div>
+              <div class="about-advantage-list-description">
+                <p>Pesan liburanmu kapan saja dan di mana saja melalui aplikasi atau website kami.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-advantage-list">
+            <div class="about-advantage-list-icon">
+              <i class="ph ph-shield-check"></i>
+            </div>
+            <div class="about-advantage-list-text">
+              <div class="about-advantage-list-title">
+                <h3>Asuransi Perjalanan</h3>
+              </div>
+              <div class="about-advantage-list-description">
+                <p>Berpetualang dengan tenang. Kami memberikan perlindungan asuransi perjalanan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- About Section End -->
 
-     <!-- Package Section -->
-      <section class="package">
-        <div class="package-box-content">
-            <div class="package-sub-title">
-                <h3>Paket Tripster</h3>
-            </div>
-            <div class="package-title">
-                <h2>Temukan paket terbaik anda !</h2>
-            </div>
-            <div class="package-content-row">
-               
-                <div class="package-content-col">
-                    <div class="package-content-header">
-                        <div class="package-content-name">
-                            <h3>Budaya</h3>
-                        </div>
-                        <div class="package-content-price">
-                            <h4>Rp. 2.500.000</h4>
-                        </div>
-                    </div>
-                    <div class="package-content-list">
-                        <ul>
-                            <li>Tour Situs Bersejarah</li>
-                            <li>Kuliner Lokal</li>
-                            <li>Panduan Ahli Budaya</li>
-                            <li>Akomodasi Tradisional</li>
-                            <li>Dokumentasi Perjalanan</li>
-                            <li>Tour Museum dan Galeri</li>
-                            <li>Transportasi Nyaman</li>
-                            <li>Asuransi Perjalanan</li>
-                        </ul>
-                    </div>
-                    <div class="package-content-btn">
-                        <a href="">Pesan Sekarang</a>
-                    </div>
-                </div>
-               
-                <div class="package-content-col">
-                    <div class="package-content-header">
-                        <div class="package-content-name">
-                            <h3>Jelajah Dunia</h3>
-                        </div>
-                        <div class="package-content-price">
-                            <h4>Rp. 15.000.000</h4>
-                        </div>
-                    </div>
-                    <div class="package-content-list">
-                        <ul>
-                            <li>Tour Negara Populer</li>
-                            <li>Akomodasi Hotel</li>
-                            <li>Panduan Perjalanan</li>
-                            <li>Tour Landmark Terkenal</li>
-                            <li>Kuliner Khas Negara</li>
-                            <li>Pemandu Lokal</li>
-                            <li>Dokumentasi Profesional</li>
-                            <li>Asuransi Perjalanan</li>
-                        </ul>
-                    </div>
-                    <div class="package-content-btn">
-                        <a href="">Pesan Sekarang</a>
-                    </div>
-                </div>
-               
-                <div class="package-content-col">
-                    <div class="package-content-header">
-                        <div class="package-content-name">
-                            <h3>Petualang</h3>
-                        </div>
-                        <div class="package-content-price">
-                            <h4>Rp. 3.500.000</h4>
-                        </div>
-                    </div>
-                    <div class="package-content-list">
-                        <ul>
-                            <li>Eksplorasi Alam Bebas</li>
-                            <li>Hiking dan Trekking</li>
-                            <li>Panduan Petualang</li>
-                            <li>Aktivitas Arum Jeram</li>
-                            <li>Makanan Lengkap</li>
-                            <li>Peralatan Keselamatan</li>
-                            <li>Dokumentasi Petualangan</li>
-                            <li>Asuransi Perjalanan</li>
-                        </ul>
-                    </div>
-                    <div class="package-content-btn">
-                        <a href="">Pesan Sekarang</a>
-                    </div>
-                </div>
-            </div>
+    <!-- Package Section -->
+    <section class="package" id="package">
+      <div class="package-box-content">
+        <div class="package-sub-title">
+          <h3>Paket Tripster</h3>
         </div>
-      </section>
-     <!-- Package Section End-->
+        <div class="package-title">
+          <h2>Temukan paket terbaik anda !</h2>
+        </div>
+        <div class="package-content-row">
+          <div class="package-content-col">
+            <div class="package-content-header">
+              <div class="package-content-name">
+                <h3>Budaya</h3>
+              </div>
+              <div class="package-content-price">
+                <h4>Rp. 2.500.000</h4>
+              </div>
+            </div>
+            <div class="package-content-list">
+              <ul>
+                <li>Tour Situs Bersejarah</li>
+                <li>Kuliner Lokal</li>
+                <li>Panduan Ahli Budaya</li>
+                <li>Akomodasi Tradisional</li>
+                <li>Dokumentasi Perjalanan</li>
+                <li>Tour Museum dan Galeri</li>
+                <li>Transportasi Nyaman</li>
+                <li>Asuransi Perjalanan</li>
+              </ul>
+            </div>
+            <div class="package-content-btn">
+              <a href="">Pesan Sekarang</a>
+            </div>
+          </div>
+
+          <div class="package-content-col">
+            <div class="package-content-header">
+              <div class="package-content-name">
+                <h3>Jelajah Dunia</h3>
+              </div>
+              <div class="package-content-price">
+                <h4>Rp. 15.000.000</h4>
+              </div>
+            </div>
+            <div class="package-content-list">
+              <ul>
+                <li>Tour Negara Populer</li>
+                <li>Akomodasi Hotel</li>
+                <li>Panduan Perjalanan</li>
+                <li>Tour Landmark Terkenal</li>
+                <li>Kuliner Khas Negara</li>
+                <li>Pemandu Lokal</li>
+                <li>Dokumentasi Profesional</li>
+                <li>Asuransi Perjalanan</li>
+              </ul>
+            </div>
+            <div class="package-content-btn">
+              <a href="">Pesan Sekarang</a>
+            </div>
+          </div>
+
+          <div class="package-content-col">
+            <div class="package-content-header">
+              <div class="package-content-name">
+                <h3>Petualang</h3>
+              </div>
+              <div class="package-content-price">
+                <h4>Rp. 3.500.000</h4>
+              </div>
+            </div>
+            <div class="package-content-list">
+              <ul>
+                <li>Eksplorasi Alam Bebas</li>
+                <li>Hiking dan Trekking</li>
+                <li>Panduan Petualang</li>
+                <li>Aktivitas Arum Jeram</li>
+                <li>Makanan Lengkap</li>
+                <li>Peralatan Keselamatan</li>
+                <li>Dokumentasi Petualangan</li>
+                <li>Asuransi Perjalanan</li>
+              </ul>
+            </div>
+            <div class="package-content-btn">
+              <a href="">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Package Section End-->
+
+    <!-- Testimoni -->
+    <section class="testimoni" id="testimoni">
+      <div class="testimoni-box-content">
+        <div class="testimoni-sub-title">
+          <h3>Review</h3>
+        </div>
+        <div class="testimoni-title">
+          <h2>Apa Kata Pengguna</h2>
+        </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimoni-card">
+                  <div class="testimoni-card-header">
+                    <div class="testimoni-card-img">
+                      <img src="images/profile/person-1.jpg" alt="" />
+                    </div>
+                    <div class="testimoni-card-name-rating">
+                      <div class="testimoni-card-name">
+                        <h3>Clara Anindya</h3>
+                      </div>
+                      <div class="testimoni-card-rating">
+                        <ul>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimoni-card-user-review">
+                    <p>Tripster membantu saya dan teman-teman menikmati liburan tanpa ribet. Kami mengambil paket budaya, dan pemandu wisata yang ramah membuat pengalaman semakin menyenangkan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimoni-card">
+                  <div class="testimoni-card-header">
+                    <div class="testimoni-card-img">
+                      <img src="images/profile/person-2.jpg" alt="" />
+                    </div>
+                    <div class="testimoni-card-name-rating">
+                      <div class="testimoni-card-name">
+                        <h3>Aditya Pratama</h3>
+                      </div>
+                      <div class="testimoni-card-rating">
+                        <ul>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimoni-card-user-review">
+                    <p>
+                      Liburan saya menjadi sangat menyenangkan berkat Tripster! Paket petualang yang mereka tawarkan benar-benar luar biasa. Destinasi wisata yang direkomendasikan juga nyaman dan menyenangkan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimoni-card">
+                  <div class="testimoni-card-header">
+                    <div class="testimoni-card-img">
+                      <img src="images/profile/person-3.jpg" alt="" />
+                    </div>
+                    <div class="testimoni-card-name-rating">
+                      <div class="testimoni-card-name">
+                        <h3>James Carter</h3>
+                      </div>
+                      <div class="testimoni-card-rating">
+                        <ul>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimoni-card-user-review">
+                    <p>Pengalaman luar biasa bersama Tripster! Dari pemesanan hingga akhir perjalanan, semuanya berjalan lancar. Paket Jelajah dunia sangat cocok untuk kami, dan anak-anak sangat menikmatinya. Kami pasti akan memesan lagi!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimoni-card">
+                  <div class="testimoni-card-header">
+                    <div class="testimoni-card-img">
+                      <img src="images/profile/person-4.jpg" alt="" />
+                    </div>
+                    <div class="testimoni-card-name-rating">
+                      <div class="testimoni-card-name">
+                        <h3>Ethan Wilson</h3>
+                      </div>
+                      <div class="testimoni-card-rating">
+                        <ul>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                          <li><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimoni-card-user-review">
+                    <p>Tripster membuat liburan saya sangat lancar dan bebas stres! Paket petualangan yang saya pilih sangat terorganisir, dan destinasinya luar biasa indah. Sangat direkomendasikan untuk pecinta perjalanan!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+    </section>
+    <!-- Testimoni End -->
+
+
+    <!-- Contact -->
+     <section class="contact">
+      <div class="contact-box-content">
+        <div class="contact-col-left">
+          <div class="contact-sub-title">
+            <h3>Kontak</h3>
+          </div>
+          <div class="contact-title">
+            <h2>Hubungi Kami</h2>
+          </div>
+          <div class="contact-description">
+            <p>Kami selalu siap membantu Anda! Jika Anda memiliki pertanyaan, saran, atau ingin mengetahui lebih lanjut tentang layanan kami, silakan isi formulir di bawah ini. Tim kami akan segera menghubungi Anda.</p>
+          </div>
+          <div class="contact-info">
+            <div class="contact-card">
+                <div class="contact-card-icon">
+                  <img src="images/phone.svg" alt="">
+                </div>
+                <div class="contact-card-phone">
+                  <div class="contact-card-tagline">
+                    <h3>Hubungi Kami Sekarang</h3>
+                  </div>
+                  <div class="contact-card-address">
+                    <h2>+62812093209320</h2>
+                  </div>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-icon">
+                  <img src="images/envelope.svg" alt="">
+                </div>
+                <div class="contact-card-phone">
+                  <div class="contact-card-tagline">
+                    <h3>Kirim Email Sekarang</h3>
+                  </div>
+                  <div class="contact-card-address">
+                    <h2>tripster@gmail.com</h2>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- Contact  End-->
 
     <script src="js/script.js"></script>
     <!-- Icon -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-</body>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+  </body>
 </html>

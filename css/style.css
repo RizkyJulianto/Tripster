@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -185,13 +185,15 @@ body {
 }
 
 .destination .destination-box-content .destination-sub-title h3,
-.about .about-box-content .about-sub-title h3 {
+.about .about-box-content .about-sub-title h3,
+.contact .contact-box-content .contact-sub-title h3  {
     color: var(--primry-color);
     font-family: 'Great Vibes', sans-serif;
     font-size: 2rem;
 }
 
-.destination .destination-box-content .destination-title h2{
+.destination .destination-box-content .destination-title h2,
+.contact .contact-box-content .contact-title h2{
     font-size: 2rem;
 }
 
@@ -398,8 +400,152 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
     font-weight: 700;
-    
 }
+
+
+/* Testimoni */
+.testimoni {
+    width: 100%;
+    position: relative;
+    padding: 3% 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.testimoni .testimoni-box-content .testimoni-sub-title h3 {
+    font-family: 'Great Vibes', sans-serif;
+    text-align: center;
+    color: var(--primry-color);
+    font-size: 2rem;
+}
+
+.testimoni .testimoni-box-content .testimoni-title h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.testimoni .testimoni-box-content .swiper {
+    width: 1080px;
+}
+
+.testimoni .testimoni-box-content .swiper-pagination-bullet {
+    background-color: var(--primry-color);
+}
+
+
+
+
+
+.testimoni .testimoni-box-content .swiper .swiper-wrapper {
+    width: 100%;
+}
+
+.testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide {
+    padding: 50px 7px;
+    width: 100%;
+}
+
+.testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide .testimoni-card {
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.7s;  
+}
+
+.testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide .testimoni-card:hover {
+ transform: scale(1.02);
+}
+
+.testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide .testimoni-card .testimoni-card-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide .testimoni-card .testimoni-card-header .testimoni-card-img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide .testimoni-card .testimoni-card-header .testimoni-card-name-rating .testimoni-card-name h3 {
+    font-size: 1.5rem;
+}
+
+.testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide .testimoni-card .testimoni-card-header .testimoni-card-name-rating .testimoni-card-rating ul {
+    display: flex;
+    gap: 5px;
+    color: #fbaf5d;
+}
+
+.testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide .testimoni-card .testimoni-card-user-review {
+    margin-top: 12px;
+}
+
+
+
+
+/* Contact */
+.contact {
+    width: 100%;
+    position: relative;
+    padding: 5% 10%;
+}
+
+
+.contact .contact-box-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact .contact-box-content .contact-col-left {
+    flex-basis: 40%;
+}
+
+.contact .contact-box-content .contact-col-left .contact-card {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--primry-color);
+    padding: 20px 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.7);
+}
+
+.contact .contact-box-content .contact-col-left .contact-card .contact-card-icon img {
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-color-white);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.contact .contact-box-content .contact-col-left .contact-card .contact-card-phone .contact-card-tagline h3 {
+    font-size: 1rem;
+    color: var(--text-color-white);
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+
+.contact .contact-box-content .contact-col-left .contact-card .contact-card-phone .contact-card-address h2 {
+    color: var(--text-color-white);
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -508,11 +654,13 @@ body {
         padding: 15% 10%;
     }
 
-    .destination .destination-box-content .destination-sub-title h3 {
+    .destination .destination-box-content .destination-sub-title h3,
+    .testimoni .testimoni-box-content .testimoni-sub-title h3{
         font-size: 1.8rem;
     }
 
-    .destination .destination-box-content .destination-title h2 {
+    .destination .destination-box-content .destination-title h2,
+    .testimoni .testimoni-box-content .testimoni-title h2 {
         font-size: 1.8rem;
     }
 
@@ -535,5 +683,22 @@ body {
 
     .package .package-box-content .package-content-row .package-content-col:nth-child(odd) {
         margin-top: 0;
+    }
+
+    .testimoni .testimoni-box-content .swiper  {
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide {
+        max-width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide .testimoni-card  {
+        width: 360px;
     }
 }
