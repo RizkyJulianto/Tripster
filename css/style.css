@@ -603,6 +603,7 @@ body {
     width: 100%;
     position: relative;
     background-color: var(--text-color);
+    margin-top: 5%;
 }
 
 .footer .footer-row {
