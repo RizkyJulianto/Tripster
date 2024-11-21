@@ -23,6 +23,18 @@ body {
     color: var(--text-color);
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primry-color);
+}
+
 .header {
     width: 100vw;
 }
@@ -616,7 +628,6 @@ body {
 
 .footer .footer-row .footer-col {
     flex-basis: 25%;
-    
 }
 
 .footer .footer-row .footer-col:nth-child(2) {
@@ -893,6 +904,10 @@ body {
         padding: 5% 6%;
     }
 
+    .contact .contact-box-content .contact-col-left .contact-card {
+        padding: 20px 20px;
+    }
+
     .contact .contact-box-content .contact-col-right  {
         flex-basis: 100%;
     }
@@ -900,4 +915,14 @@ body {
     .contact .contact-box-content .contact-col-right .contact-form input,textarea {
         font-size: 0.9rem;
     }
+
+    .footer .footer-row {
+        flex-direction: column;
+        padding: 10% 10% 5%;
+    }
+
+    .footer .footer-row .footer-col:nth-child(2) {
+        margin-top: 12px;
+    }
+
 }

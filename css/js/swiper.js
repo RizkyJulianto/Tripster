@@ -20,6 +20,7 @@ loop : true,
     },
 
 
+    
   
     // Navigation arrows
     navigation: {
