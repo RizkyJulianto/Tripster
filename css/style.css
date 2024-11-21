@@ -497,12 +497,12 @@ body {
 
 .contact .contact-box-content {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .contact .contact-box-content .contact-col-left {
-    flex-basis: 40%;
+    flex-basis: 54%;
 }
 
 .contact .contact-box-content .contact-col-left .contact-card {
@@ -536,6 +536,72 @@ body {
     letter-spacing: 1px;
     font-size: 1.3rem;
 }
+
+.contact .contact-box-content .contact-col-right {
+    background-color: var(--primry-color);
+    border-radius: 5px;
+    flex-basis: 42%;
+} 
+
+
+
+.contact .contact-box-content .contact-col-right .contact-form form {
+    width: 100%;
+    display: flex;
+    padding: 2rem 20px 1rem 20px;
+    flex-direction: column;    
+}
+
+.contact .contact-box-content .contact-col-right .contact-form .contact-form-name-email,
+.contact .contact-box-content .contact-col-right .contact-form .contact-form-phone,
+.contact .contact-box-content .contact-col-right .contact-form .contact-form-note{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+} 
+
+.contact .contact-box-content .contact-col-right .contact-form input{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+
+
+
+.contact .contact-box-content .contact-col-right .contact-form .contact-form-note textarea {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+
+.contact .contact-box-content .contact-col-right .contact-form .btn-form input {
+    border: none;
+    outline: none;
+    margin-top: 12px;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color: var(--text-color-white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+
+
 
 
 
@@ -700,5 +766,17 @@ body {
 
     .testimoni .testimoni-box-content .swiper .swiper-wrapper .swiper-slide .testimoni-card  {
         width: 360px;
+    }
+
+    .contact {
+        padding: 5% 6%;
+    }
+
+    .contact .contact-box-content .contact-col-right  {
+        flex-basis: 100%;
+    }
+
+    .contact .contact-box-content .contact-col-right .contact-form input,textarea {
+        font-size: 0.9rem;
     }
 }
