@@ -7,8 +7,7 @@ Tripster is a travel-themed website project that I developed to practice and dev
 
 
 Visit The Site : https://tripster-landing-page.vercel.app/
-
-
+<h2> * The site is responsive on desktop and mobile screen sizes only</h2>
 
 ## Lessons
 From this Tripster project, I learned:
