@@ -2,6 +2,8 @@
 Tripster is a travel-themed website project that I developed to practice and develop web development skills. This website was created using HTML, CSS, and JavaScript, and provides information about various travel packages such as cultural, adventure, and family. This repository is personal and is intended to practice my skills in building dynamic websites with a focus on design, responsiveness and user interaction.
 
 
+## Demo
+![tripster](https://github.com/user-attachments/assets/d5ac2375-55ad-4db9-8af2-8ae1a0d45545)
 
 
 ## Lessons
