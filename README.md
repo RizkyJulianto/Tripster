@@ -3,8 +3,9 @@ Tripster is a travel-themed website project that I developed to practice and dev
 
 
 ## Demo
-![tripster](https://github.com/user-attachments/assets/d5ac2375-55ad-4db9-8af2-8ae1a0d45545)
+![tripster](https://github.com/user-attachments/assets/d5ac2375-55ad-4db9-8af2-8ae1a0d4554
 
+Visit The Site : 
 
 ## Lessons
 From this Tripster project, I learned:
